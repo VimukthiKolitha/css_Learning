@@ -1,0 +1,22 @@
+/*body is parent element of boxes*/
+/**/
+.body{
+  display:flex;
+  border: 4px solid rgb(255, 94, 0);
+  height: 500px;
+
+  /*display items clumn and rever order*/
+  flex-direction: column-reverse;
+  /*move elements horizantaly*/
+  justify-content: center;
+  /*move elements veriticaly*/
+  align-items: center;
+}
+
+.box1,.box2,.box3,.box4{
+     width: 50px;
+     height: 50px;
+     background-color: brown;
+     border:2px solid black;
+     
+}
