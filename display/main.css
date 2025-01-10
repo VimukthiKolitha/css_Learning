@@ -11,6 +11,9 @@
   justify-content: center;
   /*move elements veriticaly*/
   align-items: center;
+  /*add gap*/
+  gap: 10px;
+
 }
 
 .box1,.box2,.box3,.box4{
@@ -18,5 +21,18 @@
      height: 50px;
      background-color: brown;
      border:2px solid black;
-     
+
+     /*centure number inside the box*/
+     display: flex;
+     justify-content: center;
+     align-items: center;  
+}
+.box1{
+  /*when its come to smaller screen size box1 will not change size*/
+  flex-shrink: 0;
+  /*this is use for fiting elements to parent */
+  flex-grow: 1;
+}
+.box2{
+  margin-right: auto;
 }
