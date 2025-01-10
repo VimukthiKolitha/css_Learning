@@ -1,0 +1,21 @@
+.body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    
+}
+.container {
+    width: 500px;
+    height: fit-content;
+    background-color: beige;
+
+    /*more responsive */
+    padding: min(5em,8%);
+}
+.topic
+{
+    /*responsive font size*/
+    /*min=1.8rem preffer=10vw max=5rem*/
+    font-size: clamp(1.8rem,10vw,5rem);
+}
