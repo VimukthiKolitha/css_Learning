@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         /*use clearfix for that problem (serch in google:clearfix */
+        .clearfix:after {
+                  visibility: hidden;
+                  display: block;
+                  font-size: 0;
+                  content: " ";
+                  clear: both;
+                  height: 0;
+           }
+        .clearfix { display: inline-block; }
+            /* start commented backslash hack \*/
+            * html .clearfix { height: 1%; }
+            .clearfix { display: block; }
+           /* close commented backslash hack */
+
+
+        .main{
+            background-color: antiquewhite;
+            padding: 10px;
+        }
+         .image{
+          width: 150px;
+          height: 150px;
+          float: right;
+       }
+       .para{
+        background-color: yellow;
+       }
+
+    </style>
+</head>
+<body>
+    <!--now its not ignore paret class width heght-->
+    <div class="clearfix main">
+      <img src="../BoxModel/boxModel.png" class="image"/>
+      <h5 class="para">iaudifihaifajfbajjjjjjjjjjjjjjjjjjjeiufauhhhhhhhhhhhhhhaaaeuhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhffffffffffffffffffdddddddddddddddddssssssssssssssssssssuuuuuuuuuuuuuuuuuuuuuuffffffffffffffffffffffffff</h5>
+    </div>
+</body>
+</html>
