@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--Block elements means those are fit in to full Width-->
+    <!--Inline elements means those are fit in to content-->
+    <!--
+    Block Elements: <div>,<h1>to<h6>,<nav>,<ul>,<li>,<table>
+    Inline Elemets: <a>,<i>,<span>,<label>    
+    -->
+    <style>
+        .box1{
+            background-color: aqua;
+        }
+        .h1tag1{
+            background-color: blueviolet;
+        }
+        .h1tag2{
+            background-color: rgb(139, 27, 27);
+        }
+        .anchor{
+            background-color: cadetblue;
+        }
+        .box2{
+            background-color: chocolate;
+            /*turn block element in to Inline element*/
+            display: inline;
+        }
+        .anc{
+            background-color: darkblue;
+            /*turn Inline element to block element*/
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">
+       <h1 class="h1tag1">Hellow</h1> 
+       <h1 class="h1tag2"> world</h1>
+    </div>
+
+    <a class="anchor">Hellow</a><br>
+    <span class="anchor">Hellow</span><br>
+
+
+    <div class="box2">HH</div>
+
+    <a class="anc">kajkdajk</a>
+</body>
+</html>
