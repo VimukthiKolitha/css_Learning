@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .h1{
+            color: blue;
+        }
+        .h1.last{
+            color: brown;
+        }
+       /* there is space in between that mean its calling h1's child (inside)*/
+        .h1 .inside{
+            color: chartreuse;
+        }
+    </style>
+</head>
+<body>
+    <!--ID should be unique-->
+    <h1 id="hel1" class="h1">HEllow</h1>
+    <h1 id="hel2" class="h1">HEllow</h1>
+    <h1 id="hel3" class="h1"><span class="inside">Hellow</span></h1>
+    <h1 id="hel4" class="h1 last">HEllow</h1>
+</body>
+</html>
