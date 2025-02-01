@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*if you use absolute its ignore the paren element*/
+        .box1{
+            background-color: aqua;
+            width: 200px;
+            height: 200px;
+        }
+        .con{
+            background-color: brown;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        /*if you use parent as relative.now possition absolute not ignore parent*/
+        .box2{
+            position: relative;
+            background-color: rgb(0, 255, 38);
+            width: 200px;
+            height: 200px;
+        }
+        .two{
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: cornflowerblue;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">
+        <h1 class="con">Hellow</h1>
+    </div>
+    <div class="box2">
+        <h1 class="two">Hellow</h1>
+    </div>
+</body>
+</html>
