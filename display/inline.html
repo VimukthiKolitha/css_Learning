@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .out{
+            background-color: bisque;
+            width: 500px;
+            padding: 10px;
+        }
+        .link{
+            cursor: pointer;
+            background-color: red;
+            color: white;
+            padding: 5px;
+            text-decoration: none;
+            display: inline-block;
+        }
+        .hide{
+            display: none;
+            background-color: cadetblue;
+            padding: 10px;
+            margin-top: 10px;
+        }
+    </style>
+    <script>
+        function link1(event) {
+            event.preventDefault(); // Prevents default link behavior
+            var hiddenDiv = document.querySelector('.hide');
+            if (hiddenDiv.style.display === "none" || hiddenDiv.style.display === "") {
+                // block is use for hiden blocks to show
+                hiddenDiv.style.display = "block";
+            } else {
+                hiddenDiv.style.display = "none";
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="out">
+        <p>Paragraphs are the building blocks of papers. Many define paragraphs in terms of length: a paragraph is a group of at least five sentences, a 
+        <a href="#" class="link" onclick="link1(event)">paragraph</a> is half a page long, etc. In reality, though, 
+        <a href="#" class="link">define</a> the unity and coherence of ideas among sentences is what constitutes a paragraph.</p>
+    </div>
+    <div class="hide">
+        <p>Paragraphs are the building blocks of papers. Many define paragraphs in terms of length: a paragraph is a group of at least five sentences, a is half a page long, etc. In reality, though, the unity and coherence of ideas among sentences is what constitutes a paragraph.</p>
+    </div>
+</body>
+</html>
